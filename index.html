@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shelly Mansion</title>
+
+    <link rel="shortcut icon" href="src/turtle.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="bg" class="bg"></div>
+    <div class="container">
+        <div id="box">
+            <img src="src/5946620123b2c6292c92c63f1c1c31c7.jpg" alt="logo">
+            <h2>Shelly Industries</h2>
+            <h4>Hobby book writers</h4>
+            <div id="enter-btn">Go in!</div>
+        </div>
+    </div>
+
+
+    <script src="js/particles.js-master/particles.min.js"></script>
+    <script>
+        function clicked(){window.location="home.html"}
+        goIn = document.getElementById("enter-btn").addEventListener("click",clicked);
+
+        particlesJS.load('bg', 'js/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>
