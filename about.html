@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+
+    <link rel="shortcut icon" href="src/turtle.svg" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="bg" class="bg"></div>
+    <div class="nav-bar">
+        <a href="home.html" class="nav-btn">Home</a><a href="library.html" class="nav-btn">library</a><a href="about.html" class="nav-btn">About us</a><a href="contact.html" class="nav-btn">Contact</a>
+        <img id="nav-ico" src="src/icon.webp" alt="ico">
+    </div>
+    <div id="about-container">
+        <div id="about-box">
+            <div id="img-box">
+                <img src="src/6a1f1809b728a11a1730ee535dc60618.png" alt="pfp">
+            </div>
+            <div id="text-box">
+                <h2>Hello, there!</h2>
+                <h3>Welcome in <span>Shelly Industries</span>!</h3><br>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Similique, tempore voluptatibus ex saepe sed consequatur nulla quaerat corporis voluptatem, quia cumque expedita asperiores earum autem quos suscipit. Est, quis quo!</p>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/particles.js-master/particles.min.js"></script>
+    <script>
+        particlesJS.load('bg', 'js/particles.json', function() {
+        console.log('callback - particles.js config loaded');
+        });
+    </script>
+</body>
+</html>
